@@ -5,6 +5,12 @@ on:
     types:
       - opened
   workflow_dispatch:
+  push:
+    branches:
+      - main
+      - 'dev-*' # dev-new dev-this-is-new
+      - 'feat/ss' #feat/new feat/new/button
+      # developer-1 will not trigger
 
 jobs:
   deploy:
